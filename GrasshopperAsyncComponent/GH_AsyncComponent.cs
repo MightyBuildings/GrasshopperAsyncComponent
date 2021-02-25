@@ -95,7 +95,7 @@ namespace GrasshopperAsyncComponent
 
       if (Workers.Count == 1)
       {
-        Message = ProgressReports.Values.Last().ToString("0.00%");
+          Message = ProgressReports.Values.LastOrDefault().ToString("0.00%");
       }
       else
       {
